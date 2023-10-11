@@ -1,0 +1,37 @@
+:root {
+    --footer-height: 90px;
+    --navbar-width: 12rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    background: #222;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    background: orange;
+    height: calc(100% - var(--footer-height));
+    width: var(--navbar-width);
+}
+
+main {
+    height: calc(100% - var(--footer-height));
+    width: calc(100% - var(--navbar-width));
+    background: teal;
+}
+
+footer {
+    width: 100%;
+    height: var(--footer-height);
+    background: crimson;
+}

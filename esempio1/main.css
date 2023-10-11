@@ -1,0 +1,39 @@
+:root {
+    --footer-height: 90px;
+    --navbar-width: 12rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    background: #222;
+    color: white;
+}
+
+main {
+    height: calc(100% - var(--footer-height));
+    display: flex;
+}
+
+main > nav {
+    background: orange;
+    height: 100%;
+    width: var(--navbar-width);
+}
+
+main > section {
+    height: 100%;
+    width: calc(100% - var(--navbar-width));
+    background: teal;
+}
+
+footer {
+    height: var(--footer-height);
+    background: crimson;
+}
